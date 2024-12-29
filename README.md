@@ -82,7 +82,7 @@ python main.py
 1. Create a launch agent configuration:
 ```bash
 mkdir -p ~/Library/LaunchAgents
-nano ~/Library/LaunchAgents/com.jonathan.news.plist
+nano ~/Library/LaunchAgents/com.YOUR_USERNAME.news.plist
 ```
 
 2. Add the following configuration:
@@ -92,24 +92,24 @@ nano ~/Library/LaunchAgents/com.jonathan.news.plist
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>com.jonathan.news</string>
+    <string>com.YOUR_USERNAME.news</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/jonathan/news-py/venv/bin/python</string>
-        <string>/Users/jonathan/news-py/main.py</string>
+        <string>/Users/YOUR_USERNAME/news-py/venv/bin/python</string>
+        <string>/Users/YOUR_USERNAME/news-py/main.py</string>
     </array>
     <key>WorkingDirectory</key>
-    <string>/Users/jonathan/news-py</string>
+    <string>/Users/YOUR_USERNAME/news-py</string>
     <key>StartInterval</key>
     <integer>600</integer>
     <key>StandardOutPath</key>
-    <string>/Users/jonathan/news-py/news.log</string>
+    <string>/Users/YOUR_USERNAME/news-py/news.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/jonathan/news-py/news-error.log</string>
+    <string>/Users/YOUR_USERNAME/news-py/news-error.log</string>
     <key>EnvironmentVariables</key>
     <dict>
         <key>PYTHONPATH</key>
-        <string>/Users/jonathan/news-py</string>
+        <string>/Users/YOUR_USERNAME/news-py</string>
     </dict>
 </dict>
 </plist>
@@ -117,12 +117,12 @@ nano ~/Library/LaunchAgents/com.jonathan.news.plist
 
 3. Load the launch agent:
 ```bash
-launchctl load ~/Library/LaunchAgents/com.jonathan.news.plist
+launchctl load ~/Library/LaunchAgents/com.YOUR_USERNAME.news.plist
 ```
 
 4. To unload or stop the service:
 ```bash
-launchctl unload ~/Library/LaunchAgents/com.jonathan.news.plist
+launchctl unload ~/Library/LaunchAgents/com.YOUR_USERNAME.news.plist
 ```
 
 The script will now run automatically every 10 minutes (600 seconds).
