@@ -8,7 +8,7 @@ A Python application that aggregates news from multiple RSS feeds, analyzes them
 
 - 📰 RSS Feed Integration
   - Automatic feed checking at configurable intervals
-  - Smart duplicate detection for articles
+  - Intelligent article similarity detection
   - Concurrent feed processing
   - Error handling and retry mechanisms
   - Flexible feed configuration via config.py
@@ -16,7 +16,7 @@ A Python application that aggregates news from multiple RSS feeds, analyzes them
 
 - 🤖 AI-Powered Analysis
   - Content analysis using ChatGPT
-  - Automatic duplicate detection
+  - Smart article similarity detection
   - Commercial content detection
   - Article significance scoring
   - Smart tagging system
