@@ -1,0 +1,30 @@
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+logs/
+news.log
+news-error.log
+
+# Processing files
+process.lock
+main.lock
+processed_articles.json
+image_cache.json
+
+# IDE specific files
+.vscode/
+.idea/
+
+# macOS specific files
+.DS_Store
